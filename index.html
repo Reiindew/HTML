@@ -2,11 +2,75 @@
 <html>
 <head>
     <title>Mi primera web</title>
+    <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+    </style>
 </head>
 <body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Descuento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+                <td>No</td>
+            </tr>
+            <tr></tr>
+                <td>Chanchito Feliz</td>
+                <td>19.90$</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Chanchito Feliz muy feliz</td>
+                <td>29.90$</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total:49.80$</td>
+            <td>feo</td>
+        </tfoot>
+    </table>
+
+
+    <!-- ul es lista no ordenada(con puntitos negros)-->
+    <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+    </ul>
+    <!-- ol es lista ordenada(numerada)-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style: lower-roman;">sub elemento 1</li>
+                <li style="list-style: lower-roman;">sub elemento 2</li>
+                <li style="list-style: lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+
     <form action="/formulario" method="post">
         <label for="nombre">Nombre</label>
-        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Chanchito..."/>
+        <input type="text" id="nombre" name="nombre" placeholder="Chanchito..."/>
         <br>
         <label for="apellido">apellido</label>
         <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Feliz..."/>
@@ -14,7 +78,9 @@
         <label for="comentario">Comentario</label>
         <textarea rows="10" cols="50" id="comentario" placeholder="ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
         <br>
-        <input type="submit" />
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
     </form>
     <h1>Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
@@ -23,7 +89,7 @@
     <h5>Mi quinto heading</h5>
     <h6>Chanchito feliz</h6>
     <p>Chanchito feliz esta muy feliz.</p>
-    <p>Chanchito triste esta muy triste</p>
+    <p>Chanchito triste esta muy triste.</p>
     <hr>
     <h2>Chanchito felipe</h2>
     <p>
@@ -31,9 +97,11 @@
         y es para mostrar <br><br> la etiqueta de span!
     </p>
     <!--este texto es un comentario y no va a 
-    aparecer en el explorador -->
+    aparecer en el explorador!! !-->
     <a target="_blank" href="https://www.google.com">Ir a google</a>
-    <img src="img/coffee.png" height="400" />
+    <br>
+    <br>
+    <img src="img/coffee.jpeg" height="400" />
     
 </body>
 </html>
